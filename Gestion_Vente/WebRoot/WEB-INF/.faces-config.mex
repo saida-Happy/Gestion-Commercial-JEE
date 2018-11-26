@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSFFlowViewLayout version="1.0">
+  <Drawing gridVisible="true" snapOn="true" />
+  <JSFFlowResource path="/Affiche.jsp" location="380,240" dimension="105,36" />
+  <JSFFlowResource path="/commander.jsp" location="600,120" dimension="132,36" />
+  <JSFFlowResource path="/Login.jsp" location="240,180" dimension="97,36" />
+  <JSFFlowResource path="/ModifierPwd.jsp" location="540,300" dimension="135,36" />
+  <JSFFlowResource path="/commande.jsp" location="280,80" dimension="141,41" />
+  <JSFFlowResource path="/clientsList.jsp" location="120,100" dimension="119,41" />
+  <JSFFlowResource path="/addClient.jsp" location="120,260" dimension="121,41" />
+  <JSFFlowNavigationCase id="/Affiche.jsp,/commander.jsp,envoie,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="432,240" />
+      <AbsolutePoint location="432,133" />
+      <AbsolutePoint location="600,133" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/commander.jsp,/Affiche.jsp,saveCmdSuccess,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="666,156" />
+      <AbsolutePoint location="666,258" />
+      <AbsolutePoint location="485,258" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/commander.jsp,/commander.jsp,saveCmdFulaire,&lt;empty&gt;" routingType="1">
+    <Bendpoints>
+      <Point location="740,60" />
+      <Point location="829,118" />
+    </Bendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/commander.jsp,/Affiche.jsp,annulerCmd,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="651,156" />
+      <AbsolutePoint location="651,243" />
+      <AbsolutePoint location="485,243" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/Login.jsp,/Login.jsp,failure,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="288,180" />
+      <AbsolutePoint location="288,163" />
+      <AbsolutePoint location="402,163" />
+      <AbsolutePoint location="402,198" />
+      <AbsolutePoint location="337,198" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/Login.jsp,/Affiche.jsp,login,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="288,216" />
+      <AbsolutePoint location="288,252" />
+      <AbsolutePoint location="380,252" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/ModifierPwd.jsp,/Login.jsp,logout,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="607,300" />
+      <AbsolutePoint location="607,213" />
+      <AbsolutePoint location="337,213" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/ModifierPwd.jsp,/Affiche.jsp,pageAccueil,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="592,300" />
+      <AbsolutePoint location="592,273" />
+      <AbsolutePoint location="485,273" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/clientsList.jsp,/addClient.jsp,envoieC,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="180,141" />
+      <AbsolutePoint location="180,260" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/addClient.jsp,/clientsList.jsp,ajoutC,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="195,260" />
+      <AbsolutePoint location="195,141" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+</JSFFlowViewLayout>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Gestion_Vente"
+  id="myeclipse.1456343858402"
+  context-root="/Gestion_Vente"
+  j2ee-spec="5.0"
+  archive="Gestion_Vente.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

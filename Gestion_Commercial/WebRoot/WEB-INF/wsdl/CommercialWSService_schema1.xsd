@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://serviceWS/" targetNamespace="http://serviceWS/" version="1.0">
+
+  <xs:element name="AjouterCommande" type="tns:AjouterCommande"/>
+
+  <xs:element name="AjouterCommandeResponse" type="tns:AjouterCommandeResponse"/>
+
+  <xs:element name="listProduit" type="tns:listProduit"/>
+
+  <xs:element name="listProduitResponse" type="tns:listProduitResponse"/>
+
+  <xs:complexType name="listProduit">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="listProduitResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="tns:produitsPrix"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="produitsPrix">
+    <xs:complexContent>
+      <xs:extension base="tns:abstractProduitsPrix">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType abstract="true" name="abstractProduitsPrix">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codePdt" type="xs:int"/>
+      <xs:element minOccurs="0" name="descPdt" type="xs:string"/>
+      <xs:element minOccurs="0" name="nomPdt" type="xs:string"/>
+      <xs:element minOccurs="0" name="prixPdt" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AjouterCommande">
+    <xs:sequence>
+      <xs:element name="codeCmd" type="xs:int"/>
+      <xs:element minOccurs="0" name="client" type="xs:string"/>
+      <xs:element name="codePdt" type="xs:int"/>
+      <xs:element name="qteCmd" type="xs:int"/>
+      <xs:element minOccurs="0" name="dateCmd" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AjouterCommandeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

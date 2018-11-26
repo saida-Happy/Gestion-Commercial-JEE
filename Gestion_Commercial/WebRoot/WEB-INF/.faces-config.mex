@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSFFlowViewLayout version="1.0">
+  <Drawing gridVisible="true" snapOn="true" />
+  <JSFFlowResource path="/Afficher.jsp" location="122,211" dimension="109,36" />
+  <JSFFlowResource path="/Modifier.jsp" location="395,104" dimension="112,36" />
+  <JSFFlowResource path="/AjouterPdt.jsp" location="380,300" dimension="124,36" />
+  <JSFFlowNavigationCase id="/Afficher.jsp,/Modifier.jsp,editer,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="231,214" />
+      <AbsolutePoint location="457,214" />
+      <AbsolutePoint location="457,140" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/Afficher.jsp,/AjouterPdt.jsp,ajouter,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="176,247" />
+      <AbsolutePoint location="176,318" />
+      <AbsolutePoint location="380,318" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/Modifier.jsp,/Afficher.jsp,modifier,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="395,122" />
+      <AbsolutePoint location="176,122" />
+      <AbsolutePoint location="176,211" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/AjouterPdt.jsp,/Afficher.jsp,ajout,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="442,300" />
+      <AbsolutePoint location="442,229" />
+      <AbsolutePoint location="231,229" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+</JSFFlowViewLayout>
+
